@@ -7,7 +7,9 @@ const btn = document.getElementById('btn');
 const flipHexColors = () => {
     let hexColor = '#';
  //hex color = 6 values
-    for(let i = 0; i < 6; i++) hexColor += hex[getRandomNumber()];
+    for(let i = 0; i < 6; i++) {
+        hexColor += hex[getRandomNumber()];
+    }
     document.body.style.backgroundColor = hexColor;
     color.textContent = hexColor;
 }
